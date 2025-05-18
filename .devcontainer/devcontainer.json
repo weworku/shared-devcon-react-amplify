@@ -1,0 +1,20 @@
+{
+  "name": "Existing Docker Compose (Extend)",
+  "dockerComposeFile": [
+    "../compose.yml"
+  ],
+  "service": "react-amplify-app",
+  "workspaceFolder": "/usr/src/app",
+
+  // Amplify CLI をインストール
+  "postCreateCommand": "npm install -g @aws-amplify/cli",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "eamodio.gitlens",
+        "aws-amplify.amplify-tools" // Amplify Studio拡張も入れると便利（任意）
+      ]
+    }
+  }
+}
