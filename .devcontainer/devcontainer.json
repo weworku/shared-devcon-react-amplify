@@ -9,13 +9,6 @@
   // Amplify CLI をインストール
   "postCreateCommand": "npm install -g @aws-amplify/cli",
 
-  // 環境変数の設定
-  "remoteEnv": {
-    "AWS_ACCESS_KEY_ID": "${localEnv:AWS_ACCESS_KEY_ID}",
-    "AWS_SECRET_ACCESS_KEY": "${localEnv:AWS_SECRET_ACCESS_KEY}",
-    "AWS_SESSION_TOKEN": "${localEnv:AWS_SESSION_TOKEN}"
-  },
-
   "customizations": {
     "vscode": {
       "extensions": [
